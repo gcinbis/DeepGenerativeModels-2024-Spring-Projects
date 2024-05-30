@@ -1,0 +1,17 @@
+The URL of the paper: https://openaccess.thecvf.com/content/ICCV2023/papers/Yi_Diff-Retinex_Rethinking_Low-light_Image_Enhancement_with_A_Generative_Diffusion_Model_ICCV_2023_paper.pdf
+
+Experimental Goals: 
+
+Dataset: We will use the LOL dataset (https://www.kaggle.com/datasets/soumikrakshit/lol-dataset?resource=download)
+which consists of 485 train and 15 test images with high and low resolution image pairs.
+The image resolutions are 600x400.
+
+If the resolution is too large for our computers or google COLAB, we will downsize the images by half, reducing them to 300x200.
+Alternatively, we can shrink them to 150x100, reducing their size by one-fourth if needed.
+
+If the model is too large even for batch size of 1, we will reduce the network sizes accordingly.
+
+Qualitative Results: The authors present qualitative results on four LOL dataset images, which we will replicate and compare with our own results. Additionally, we will show results on other test images.
+Quantitative Results: We will target the reproduction of FID, PSNR, and SSIM scores.
+
+Group 2: Hamza Etcibaşı & Enes Şanlı
