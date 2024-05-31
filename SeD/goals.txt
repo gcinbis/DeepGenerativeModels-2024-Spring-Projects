@@ -1,0 +1,49 @@
+
+Project Title: SeD: Semantic-Aware Discriminator for Image Super-Resolution
+
+
+The url for the paper we are going to reproduce : https://arxiv.org/pdf/2402.19387.pdf
+
+
+For Quantitative Results , we are aiming to reproduce rows 6,7,8,9 at Table 1, corresponding to the setting with RRDB backbone generator. Paper also presents results with SwinIR backbone generator to demonstrate the generalizability of their model, however we'll only work with RRDB backbone generator:
+
+RRDB+P 
+RRDB+P+SeD 
+RRDB+U 
+RRDB+U+SeD 
+
+We will use LPIPS↓/PSNR↑/SSIM↑ metrics and evaluate on Set5,Set14,DIV2K,Urban100,Manga109 datasets ( In case of DIV2K not fitting in Google Colab setting for demo, we'll exclude it as a fallback plan.As we believe that we are also implementing on 4 other benchmarks in that case we believe this would cause a crucial problem.)
+
+For Qualitative Results, we are aiming to reproduce the Figure 3 column 6 results in the paper.
+
+
+
+
+—— version 1 submission ——
+
+
+We have completed implementation of all modules  and evaluation metrics. However, we faced a problem where the remote server we were doing the project crashed and our model weights are lost. Therefore we cannot demonstrate the exact evaluation scores we aimed and the images we promised.
+
+We have talked with Gökberk Hoca about the situtation, restarted the training and share with him the promised results as soon as possible.
+
+We have demonstrated on Jupyter Notebook on a small subset that our implementation works correctly and can generate super-resolution images.
+
+
+Besides this, as mentioned in the experimantal goals DIV2K is removed from the test datasets. We only reproduce on Set5,Set14,DIV2K,Urban100,Manga109 datasets.
+
+
+
+—— version 2 submission ——
+
+
+
+We did not changed our goals. We evaluated on LPIPS↓/PSNR↑/SSIM↑ metrics and evaluate on Set5,Set14,Urban100,Manga109,DIV2K datasets.
+
+We also reproduced Figure 3 Column 6 results in the paper ( there is a small problem here, the authors took random crops, we tried to approximate these crops as best as we can, however there is still some small difference in the inputs).
+
+
+The scores and qualitative results demonstrate a good replication of the paper results. We are close to the exact quantitative metrics and obtained visually good results, as demonstrated in the main.ipynb notebook.
+We think that the difference between the results proposed in the paper stems from the random crops taken from the evaluation datasets. Besides the assumptions we had to made ( which were not included in the paper) might have caused this difference.
+
+
+
