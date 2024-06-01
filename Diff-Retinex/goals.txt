@@ -1,3 +1,5 @@
+———————— version 1 submission ————————
+
 The URL of the paper: https://openaccess.thecvf.com/content/ICCV2023/papers/Yi_Diff-Retinex_Rethinking_Low-light_Image_Enhancement_with_A_Generative_Diffusion_Model_ICCV_2023_paper.pdf
 
 Experimental Goals: 
@@ -15,3 +17,42 @@ Qualitative Results: The authors present qualitative results on four LOL dataset
 Quantitative Results: We will target the reproduction of FID, PSNR, and SSIM scores.
 
 Group 2: Hamza Etcibaşı & Enes Şanlı
+
+———————— version 2 submission ————————
+Dataset: We used the LOL dataset as we claimed, but we shrank the image size to 3x160x160 as the authors stated in the paper. 
+All experiments are done using this input resolution in v2.
+
+Implementation:
+The paper includes three main parts:
+
+1) TDN Part: This part is used for Retinex Decomposition, meaning that it decomposes an image into reflectance and illumination images. 
+We successfully trained TDN part and decomposed the images, then reconstructed the original image by multiplying these images to validate our implementation.
+
+2) RDA and IDA Parts: Reflectance Diffusion Adjustment (RDA) and Illumination Diffusion Adjustment (IDA) are trained separately. 
+The authors trained each network using 800,000 iterations with a batch size of 16, which is equivalent to approximately 26,391 epochs. 
+Due to computational resource limitations and time constraints, we trained the RDA part for 8800 epochs and the IDA part for 1100 epochs. 
+We gradually sampled and observed the model's learning progress. Since diffusion models fully converge after 800,000 or 1M iterations,
+ our models did not fully converge. In our outputs, the noise is visible due to this.
+
+Qualitative Results:
+Except for the noise, the image colors and general shapes are fine, and we reached our goal of low-light image enhancement. 
+We believe that with enough time, our implementation would achieve the same visual quality as the authors proposed.
+
+Quantitative Results:
+Metric	Papaer  Reproduced
+PSNR	21.98	20.01
+SSIM	0.863	0.618
+FID	47.85	165.15
+
+PSNR: Our PSNR score is very close to the reported results in the paper, and we outperformed most of the baselines.
+
+SSIM and FID: We got much worse results for these two metrics. We attribute this mainly to the number of training epochs. 
+Since the models did not fully converge, our outputs contain noise. When we multiply the reflectance image with the illumination image, 
+the noise is further boosted. These two metrics perceive this noise as degradation, leading to lower scores.
+
+We hope that when the training is completed fully, we can achieve the same results as the paper.
+
+Group 2: Hamza Etcibaşı & Enes Şanlı
+
+
+
