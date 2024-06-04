@@ -20,3 +20,19 @@ This folder provides a re-implementation of this paper in PyTorch, developed as 
 ![Ours (Reproduced)](assets/Ours_Reproduced.png)
 
 Please see the jupyter notebook file [main.ipynb](main.ipynb) for a summary of the paper, the implementation notes, and our experimental results.
+
+##  Dataset and Pre-trained Models
+
+You can download dataset with running download_data.sh script
+```ruby
+chmod +x download_data.sh
+./download_data.sh
+```
+
+You can download weights of models from these links:
+
+[TDN Weights:]()
+
+[Reflectance Map Diffusion Model Weights:](https://drive.google.com/file/d/1kQzemnfJLoTzqKjOIY09j893SsLvHTUw/view?usp=sharing)
+
+[Illumination Map Diffusion Model Weights:](https://drive.google.com/file/d/1_0G09_rNPa7dYw4ud49yrn1EPwS_-Snb/view?usp=sharing)
