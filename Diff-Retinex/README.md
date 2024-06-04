@@ -31,7 +31,7 @@ chmod +x download_data.sh
 
 You can download weights of models from these links:
 
-[TDN Weights:]()
+[TDN Weights:](https://drive.google.com/file/d/1jK3qVySi3dKu0ABFsBvRjprAYTMK6C6D/view?usp=sharing)
 
 [Reflectance Map Diffusion Model Weights:](https://drive.google.com/file/d/1kQzemnfJLoTzqKjOIY09j893SsLvHTUw/view?usp=sharing)
 
