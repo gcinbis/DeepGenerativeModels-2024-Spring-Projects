@@ -1,0 +1,9 @@
+## Python version: 3.11.3
+
+torch
+numpy
+tqdm
+transformers
+lightning
+pillow
+gdown
