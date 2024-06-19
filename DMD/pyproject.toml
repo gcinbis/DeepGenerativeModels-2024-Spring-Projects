@@ -1,0 +1,13 @@
+[tool.black]
+line-length = 114
+exclude = '''
+(
+  /(
+    | .git
+    | venv
+    | .venv
+    | data
+    | notebooks
+  )/
+)
+'''
