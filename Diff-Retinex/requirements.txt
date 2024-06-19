@@ -1,0 +1,12 @@
+torch
+torchvision
+einops
+numpy
+matplotlib
+opencv-python
+scikit-image
+scipy
+keras
+tensorflow
+torchshow
+pillow
