@@ -1,0 +1,2 @@
+python download_dataset.py --path data-efficient-gans/DiffAugment-stylegan2-pytorch/100-shot-obama
+python data-efficient-gans/DiffAugment-stylegan2-pytorch/dataset_tool.py --source data-efficient-gans/DiffAugment-stylegan2-pytorch/100-shot-obama --dest data-efficient-gans/DiffAugment-stylegan2-pytorch/100-shot-obama-dataset
