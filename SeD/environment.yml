@@ -1,0 +1,31 @@
+name: sed
+channels:
+  - pytorch
+  - anaconda
+  - defaults
+  - nvidia
+  - conda-forge
+dependencies:
+  - cudatoolkit=11.7
+  - ninja
+  - numpy
+  - pytorch=1.13
+  - torchvision
+  - pillow
+  - pip
+  - python
+  - pytorch-lightning=2.0.8
+  - pip:
+    - scikit-learn
+    - scipy
+    - easydict
+    - wandb
+    - tensorboard
+    - ftfy
+    - regex
+    - tqdm
+    - opencv-python
+    - timm==0.6.12
+    - einops
+    - gdown
+    - git+https://github.com/openai/CLIP.git
