@@ -1,4 +1,4 @@
-Sem# [Video Decomposition Prior: Editing Videos Layer by Layer](https://openreview.net/pdf?id=nfMyERXNru)
+# [Video Decomposition Prior: Editing Videos Layer by Layer](https://openreview.net/pdf?id=nfMyERXNru)
 
 Gaurav Shrivastava, Ser-Nam Lim, Abhinav Shrivastava
 
