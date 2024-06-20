@@ -1,4 +1,35 @@
-﻿import numpy as np
+﻿#######################################################################################################################################
+#                                                                                                                                     #
+# We have used the original StyleGAN2Loss in loss.py as a template for KDLoss, but we have made the following modifications:          #
+#                                                                                                                                     #
+# 1 - Added some comment lines.                                                                                                       #
+# 2 - In the 'accumulate_gradients' method, defined a 'loss_kd' parameter to calculate the KD-DLGAN loss alongside the original       #
+#   discriminator loss.                                                                                                               #
+#                                                                                                                                     #
+# 3 - In the 'accumulate_gradients' method,                                                                                           #
+#   added 'KD_d_loss = KDDiscriminatorLoss(AGKD=self.AGKD, CGKD=self.CGKD, nz=128, batch_size=batch_size)'                            #
+#   to define the KD-DLGAN loss function with the correct parameters.                                                                 #
+#                                                                                                                                     #
+# 4 - In the 'accumulate_gradients' method,                                                                                           #
+#   added 'loss_kd = KD_d_loss.forward(real_features=real_features, gen_features=gen_features, real_data=real_img, gen_data=gen_img)' #
+#   to calculate the KD-DLGAN loss.                                                                                                   #
+#                                                                                                                                     #
+# The reason we made these changes is to modify the training to use our loss function.                                                #
+#                                                                                                                                     #
+# We have implemented 'KDDiscriminatorLoss', which contains the core logic of the loss function, ourselves.                           #
+#                                                                                                                                     #
+#######################################################################################################################################
+
+
+# Copyright (c) 2021, NVIDIA CORPORATION.  All rights reserved.
+#
+# NVIDIA CORPORATION and its licensors retain all intellectual property
+# and proprietary rights in and to this software, related documentation
+# and any modifications thereto.  Any use, reproduction, disclosure or
+# distribution of this software and related documentation without an express
+# license agreement from NVIDIA CORPORATION is strictly prohibited.
+
+import numpy as np
 import torch
 from . import CLIP
 from .loss import Loss

@@ -1,4 +1,29 @@
-﻿import numpy as np
+﻿##########################################################################################################
+#                                                                                                        #
+# We have made the following modifications:                                                              #
+#                                                                                                        #
+# 1 - Modified the 'forward' method of 'Discriminator' class,                                            #
+#     added the 'features' to return statement.                                                          #
+#                                                                                                        #
+# 2 - Modified the 'forward' method of 'DiscriminatorEpilogue' class,                                    #
+#     added the 'return_features' parameter and                                                          #
+#     changed the return statement to return 'features' if 'return_features' is True.                    #
+#                                                                                                        #
+# The reason we made these changes is to get the features of the discriminator,                          #
+# which will be used in the KD-DLGAN algorithm.                                                          #
+#                                                                                                        #
+##########################################################################################################
+
+ 
+# Copyright (c) 2021, NVIDIA CORPORATION.  All rights reserved.
+#
+# NVIDIA CORPORATION and its licensors retain all intellectual property
+# and proprietary rights in and to this software, related documentation
+# and any modifications thereto.  Any use, reproduction, disclosure or
+# distribution of this software and related documentation without an express
+# license agreement from NVIDIA CORPORATION is strictly prohibited.
+
+import numpy as np
 import torch
 from torch_utils import misc
 from torch_utils import persistence

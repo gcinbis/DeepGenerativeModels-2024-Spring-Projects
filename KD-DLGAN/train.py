@@ -1,3 +1,32 @@
+#####################################################################################################################################
+#                                                                                                                                   #
+# We have made the following modifications:                                                                                         #
+#                                                                                                                                   #
+# 1 - Added '@click.option('--loss', help='Loss function [da, da_kd_agkd, da_kd_cgkd, da_kd_agkd_cgkd]', type=str, required=True)'  #
+#     to allow changing the loss function via the command line.                                                                     #
+#                                                                                                                                   #
+# 2 - Added 'args.loss_kwargs = dnnlib.EasyDict(class_name='training.kd_loss.KDLoss', r1_gamma=spec.gamma)'                         #
+#     to enable the use of our KDLoss loss function when specified.                                                                 #
+#                                                                                                                                   #
+# 3 - Added the following code to pass the arguments to the loss function:                                                          #
+#     if 'agkd' in loss:                                                                                                            #
+#         args.loss_kwargs.AGKD = True                                                                                              #
+#     if 'cgkd' in loss:                                                                                                            #
+#         args.loss_kwargs.CGKD = True                                                                                              #
+#                                                                                                                                   #
+# The reason we made these changes is to modify the training to use our loss function.                                              #
+#                                                                                                                                   #
+#####################################################################################################################################
+
+
+# Copyright (c) 2021, NVIDIA CORPORATION.  All rights reserved.
+#
+# NVIDIA CORPORATION and its licensors retain all intellectual property
+# and proprietary rights in and to this software, related documentation
+# and any modifications thereto.  Any use, reproduction, disclosure or
+# distribution of this software and related documentation without an express
+# license agreement from NVIDIA CORPORATION is strictly prohibited.
+
 """Train a GAN using the techniques described in the paper
 "Training Generative Adversarial Networks with Limited Data"."""
 
