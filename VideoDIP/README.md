@@ -116,14 +116,14 @@ To dehaze videos using the `DehazeVDPModule`, you can use the `main_dehaze.py` s
 
 Example:
 ```bash
-python main_dehaze.py --input_path "datasets/dehazing/hazy/C005" --target_path "datasets/dehazing/gt/C005" --airlight_est_path "datasets/dehazing/processed/C005"
+python main_dehaze.py --input_path "datasets/dehaze/hazy/C005" --target_path "datasets/dehaze/gt/C005" --airlight_est_path "datasets/dehaze/processed/C005"
 ```
 
 To benchmark dehazing across multiple sub-folders in a dataset, use the benchmark_dehaze.py script.
 
 Example:
 ```bash
-python benchmark_dehaze.py --dataset_path "datasets/dehazing"
+python benchmark_dehaze.py --dataset_path "datasets/dehaze"
 ```
 
 ### Relighting
@@ -132,14 +132,14 @@ To relight videos using the RelightVDPModule, you can use the main_relight.py sc
 
 Example:
 ```bash
-python main_relight.py --input_path "datasets/relighting/outdoor_png/input/pair76" --target_path "datasets/relighting/outdoor_png/GT/pair76"
+python main_relight.py --input_path "datasets/relight/outdoor_png/input/pair76" --target_path "datasets/relight/outdoor_png/GT/pair76"
 ```
 
 To benchmark relighting across multiple sub-folders in a dataset, use the benchmark_relight.py script.
 
 Example:
 ```bash
-python benchmark_relight.py --dataset_path "datasets/relighting/outdoor_png"
+python benchmark_relight.py --dataset_path "datasets/relight/outdoor_png"
 ```
 
 ### Segmentation
@@ -148,14 +148,14 @@ To segment videos using the SegmentationVDPModule, you can use the main_segmenta
 
 Example:
 ```bash
-python main_segmentation.py --input_path "datasets/input/bear" --target_path "datasets/GT/pair1"
+python main_segmentation.py --input_path "datasets/benchmark_root/input/bear" --target_path "datasets/benchmark_root/GT/pair1"
 ```
 
 To benchmark segmentation across multiple sub-folders in a dataset, use the benchmark_segmentation.py script.
 
 Example:
 ```bash
-python benchmark_segmentation.py --dataset_path "datasets"
+python benchmark_segmentation.py --dataset_path "datasets/benchmark_root"
 ```
 
 Dataset Structure
@@ -164,7 +164,7 @@ The dataset should be organized in a hierarchical structure, with separate folde
 #### Dehazing
 ```text
 datasets/
-└── dehazing/
+└── dehaze/
     ├── hazy/
     │   ├── C005/
     │   │   ├── 0001.png
@@ -188,8 +188,7 @@ datasets/
 #### Relighting
 ```text
 datasets/
-└── relighting/
-    ├── outdoor_png/
+└── relight/
     │   ├── input/
     │   │   ├── pair76/
     │   │   │   ├── 0001.png
@@ -208,8 +207,7 @@ datasets/
 #### Segmentation
 ```text
 datasets/
-└── segmentation/
-    ├── davis/
+└── benchmark_root/
     │   ├── input/
     │   │   ├── bear/
     │   │   │   ├── 0001.jpg
