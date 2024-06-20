@@ -20,4 +20,6 @@ This folder provides a re-implementation of this paper in PyTorch, developed as 
 
 Please see the jupyter notebook file [main.ipynb](main.ipynb) for a summary of paper, the implementation notes and our experimental results.
 
-**Optional**: installation instructions, and any other comments you may want to add. 
+#### Additional:
+
+* This folder is implemented based on the [DiffAugment for StyleGAN2 (Pytorch)](https://github.com/mit-han-lab/data-efficient-gans) with minimal modifications for training. The Jupyter notebook file [main.ipynb](main.ipynb) first clones the original [DiffAugment for StyleGAN2 (Pytorch)](https://github.com/mit-han-lab/data-efficient-gans) repository then, overwrites the original files with the modified [networks.py](networks.py) and [train.py](train.py) files and adds the [kd_loss.py](kd_loss.py) to the cloned repository.
