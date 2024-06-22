@@ -1,0 +1,24 @@
+====================================================================================================
+Found 11 sub-folders in the dataset.
+====================================================================================================
+Metrics for sub-folder: datasets/relight/GT/pair36
+[{'psnr': 23.184301376342773, 'ssim': 0.7664359211921692, 'gamma_inv': 0.8887526988983154}]
+Metrics for sub-folder: datasets/relight/GT/pair75
+[{'psnr': 23.33925437927246, 'ssim': 0.8311828970909119, 'gamma_inv': 0.8651238679885864}]
+Metrics for sub-folder: datasets/relight/GT/pair14
+[{'psnr': 26.64459800720215, 'ssim': 0.8594304323196411, 'gamma_inv': 0.8888895511627197}]
+Metrics for sub-folder: datasets/relight/GT/pair66
+[{'psnr': 23.022184371948242, 'ssim': 0.7970460653305054, 'gamma_inv': 0.8717686533927917}]
+Metrics for sub-folder: datasets/relight/GT/pair46
+[{'psnr': 23.715530395507812, 'ssim': 0.8431610465049744, 'gamma_inv': 0.8623124957084656}]
+Metrics for sub-folder: datasets/relight/GT/pair62
+[{'psnr': 22.925643920898438, 'ssim': 0.7349527478218079, 'gamma_inv': 0.8770827651023865}]
+Metrics for sub-folder: datasets/relight/GT/pair63
+[{'psnr': 25.542829513549805, 'ssim': 0.7936222553253174, 'gamma_inv': 0.8803402781486511}]
+Metrics for sub-folder: datasets/relight/GT/pair5
+[{'psnr': 14.047538757324219, 'ssim': 0.42372116446495056, 'gamma_inv': 0.8939761519432068}]
+Metrics for sub-folder: datasets/relight/GT/pair76
+[{'psnr': 25.65187644958496, 'ssim': 0.7597699165344238, 'gamma_inv': 0.8801560997962952}]
+Metrics for sub-folder: datasets/relight/GT/pair48
+[{'psnr': 18.473052978515625, 'ssim': 0.6810734272003174, 'gamma_inv': 0.8349571228027344}]
+Metrics for sub-folder: datasets/relight/GT/pair60

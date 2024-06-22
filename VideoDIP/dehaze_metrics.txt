@@ -1,0 +1,17 @@
+====================================================================================================
+Found 6 sub-folders in the dataset.
+====================================================================================================
+Metrics for sub-folder: datasets/dehaze/gt/W002
+[{'psnr': 22.19925308227539, 'ssim': 0.893523097038269}]
+Metrics for sub-folder: datasets/dehaze/gt/E005
+[{'psnr': 9.681660652160645, 'ssim': 0.5999221205711365}]
+Metrics for sub-folder: datasets/dehaze/gt/E006
+[{'psnr': 14.038686752319336, 'ssim': 0.7894417643547058}]
+Metrics for sub-folder: datasets/dehaze/gt/L006
+[{'psnr': 15.605810165405273, 'ssim': 0.7836281657218933}]
+Metrics for sub-folder: datasets/dehaze/gt/J004
+[{'psnr': 16.467269897460938, 'ssim': 0.7626084685325623}]
+Metrics for sub-folder: datasets/dehaze/gt/C005
+[{'psnr': 17.63010597229004, 'ssim': 0.8031386137008667}]
+Averaged Metrics:
+{'psnr': 15.93713108698527, 'ssim': 0.7720437049865723}
