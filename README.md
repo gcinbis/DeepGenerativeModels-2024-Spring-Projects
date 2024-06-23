@@ -10,4 +10,5 @@
 * [KD-DLGAN](KD-DLGAN/) - KD-DLGAN: Data Limited Image Generation via Knowledge Distillation (CVPR'23)
 * [MasterStyleTransfer](MasterStyleTransfer/) - Master: Meta Style Transformer for Controllable Zero-Shot and Few-Shot Artistic Style Transfer (CVPR'23)
 * [SeD](SeD/) - SeD: Semantic-Aware Discriminator for Image Super-Resolution (CVPR'24)
+* [VideoDIP](VideoDIP/) - Video Decomposition Prior: Editing Videos Layer by Layer
 
